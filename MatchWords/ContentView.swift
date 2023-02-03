@@ -7,13 +7,82 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            HStack {
+                Button("Word") {
+                    
+                }
+                .buttonStyle(.plain)
+                .background(content: {
+                    Rectangle()
+                        .foregroundColor(.gray)
+                        .frame(width: 75, height: 50)
+                })
+                .padding()
+                
+                Button("Word") {
+                    
+                }
+                .buttonStyle(.plain)
+                .background(content: {
+                    Rectangle()
+                        .foregroundColor(.gray)
+                        .frame(width: 75, height: 50)
+                })
+                .padding()
+            }
+            
+            HStack {
+                Button("Word") {
+                    
+                }
+                .buttonStyle(.plain)
+                .background(content: {
+                    Rectangle()
+                        .foregroundColor(.gray)
+                        .frame(width: 75, height: 50)
+                })
+                .padding()
+                
+                Button("Word") {
+                    
+                }
+                .buttonStyle(.plain)
+                .background(content: {
+                    Rectangle()
+                        .foregroundColor(.gray)
+                        .frame(width: 75, height: 50)
+                })
+                .padding()
+            }
+            
+            HStack {
+                Button("Word") {
+                    
+                }
+                .buttonStyle(.plain)
+                .background(content: {
+                    Rectangle()
+                        .foregroundColor(.gray)
+                        .frame(width: 75, height: 50)
+                })
+                .padding()
+                
+                Button("Word") {
+                    
+                }
+                .buttonStyle(.plain)
+                .background(content: {
+                    Rectangle()
+                        .foregroundColor(.gray)
+                        .frame(width: 75, height: 50)
+                })
+                .padding()
+            }
         }
         .padding()
     }
@@ -22,5 +91,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .preferredColorScheme(.dark)
     }
 }
