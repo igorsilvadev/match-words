@@ -11,7 +11,7 @@ import SwiftUI
 struct MatchWordsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MatchWordView()
                 .preferredColorScheme(.dark)
         }
     }

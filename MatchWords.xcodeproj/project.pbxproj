@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230C0C8B299332290029DD85 /* MatchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C0C86299332290029DD85 /* MatchViewModel.swift */; };
+		230C0C8C299332290029DD85 /* MatchWordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C0C88299332290029DD85 /* MatchWordView.swift */; };
+		230C0C8D299332290029DD85 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230C0C8A299332290029DD85 /* ButtonView.swift */; };
 		23AD37DC298CAB480035760C /* MatchWordsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD37DB298CAB480035760C /* MatchWordsApp.swift */; };
-		23AD37DE298CAB480035760C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AD37DD298CAB480035760C /* ContentView.swift */; };
 		23AD37E0298CAB4A0035760C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23AD37DF298CAB4A0035760C /* Assets.xcassets */; };
 		23AD37E3298CAB4A0035760C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23AD37E2298CAB4A0035760C /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		230C0C86299332290029DD85 /* MatchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchViewModel.swift; sourceTree = "<group>"; };
+		230C0C88299332290029DD85 /* MatchWordView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchWordView.swift; sourceTree = "<group>"; };
+		230C0C8A299332290029DD85 /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		23AD37D8298CAB480035760C /* MatchWords.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MatchWords.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23AD37DB298CAB480035760C /* MatchWordsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchWordsApp.swift; sourceTree = "<group>"; };
-		23AD37DD298CAB480035760C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		23AD37DF298CAB4A0035760C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23AD37E2298CAB4A0035760C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +36,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		230C0C85299332290029DD85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				230C0C86299332290029DD85 /* MatchViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		230C0C87299332290029DD85 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				230C0C88299332290029DD85 /* MatchWordView.swift */,
+				230C0C89299332290029DD85 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		230C0C89299332290029DD85 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				230C0C8A299332290029DD85 /* ButtonView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		23AD37CF298CAB480035760C = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +80,9 @@
 		23AD37DA298CAB480035760C /* MatchWords */ = {
 			isa = PBXGroup;
 			children = (
+				230C0C85299332290029DD85 /* ViewModel */,
+				230C0C87299332290029DD85 /* Views */,
 				23AD37DB298CAB480035760C /* MatchWordsApp.swift */,
-				23AD37DD298CAB480035760C /* ContentView.swift */,
 				23AD37DF298CAB4A0035760C /* Assets.xcassets */,
 				23AD37E1298CAB4A0035760C /* Preview Content */,
 			);
@@ -137,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23AD37DE298CAB480035760C /* ContentView.swift in Sources */,
+				230C0C8B299332290029DD85 /* MatchViewModel.swift in Sources */,
+				230C0C8D299332290029DD85 /* ButtonView.swift in Sources */,
+				230C0C8C299332290029DD85 /* MatchWordView.swift in Sources */,
 				23AD37DC298CAB480035760C /* MatchWordsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
