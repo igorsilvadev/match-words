@@ -61,7 +61,7 @@ struct ButtonView: View {
 }
 
 
-struct ContentView: View {
+struct MatchWordView: View {
     @StateObject private var viewModel = ViewModel()
     
     var body: some View {
@@ -89,7 +89,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MatchWordView()
             .preferredColorScheme(.light)
     }
 }
