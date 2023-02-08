@@ -21,14 +21,14 @@ class MatchViewModel: ObservableObject {
         keys = dictionary.keys.map{$0}.shuffled()
         values = dictionary.values.map{$0}.shuffled()
         
-        $key.zip($value).sink {  key, value in
+        $key.combineLatest($value).sink {  key, value in
             print("Combinação key:\(key) value:\(value)")
             if (!value.isEmpty && !key.isEmpty) && self.dictionary[key] == value {
-                self.key = ""
-                self.value = ""
                 self.keys.removeAll { $0 == key}
                 self.values.removeAll { $0 == value}
             
+            } else if (!value.isEmpty && !key.isEmpty) {
+                print("Palavras erradas")
             }
         }.store(in: &cancellables)
     }
