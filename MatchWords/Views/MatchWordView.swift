@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct MatchWordView: View {
-    @StateObject private var viewModel = MatchViewModel()
+    @ObservedObject private var viewModel = MatchViewModel()
     
     var body: some View {
         
